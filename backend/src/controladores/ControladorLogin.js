@@ -7,7 +7,7 @@ module.exports = {
         .select('name').first();
 
         if(!ong){
-            return response.status(400).json({ error: 'Nao existe ong c esse id'});
+            return response.status(400).json({ error: 'Não existe ONG com esse ID.'});
         }
 
         return response.json(ong);

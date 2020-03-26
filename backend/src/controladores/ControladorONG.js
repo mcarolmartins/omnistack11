@@ -7,7 +7,7 @@ module.exports = {
         return response.json(ongs);
     },
 
-    async create (request, reponse){
+    async create (request, response){
     const {name, email, whatsapp, city, uf} = request.body;
     
     const id = crypto.randomBytes(4).toString('HEX');
