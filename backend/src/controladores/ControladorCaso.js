@@ -21,7 +21,7 @@ module.exports = {
             'ongs.uf'
         ]);
 
-        response.header('totalCount', count['count(*)']);
+        response.header('total', count['count(*)']);
         return response.json(casos);
     },
 
